@@ -49,8 +49,6 @@ body {
   border-top: #549ef2 4px solid;
 }
 .main .content .flex-container .card {
-  min-width: 300px;
-  width: 310px;
   height: 222px;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.8);
@@ -91,7 +89,17 @@ body {
   right: 0px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 768px) {
+  .main .content .card {
+    width: 310px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024) {
+  .main .content .card {
+    width: 80vw;
+  }
+}
+@media screen and (min-width: 1025px) {
   .main .content .flex-container {
     flex-direction: row;
   }
@@ -101,6 +109,10 @@ body {
   }
   .main .content .card {
     margin: 1rem;
+    min-width: 310px;
+    max-width: 400px;
+    width: 25vw;
+    height: 222px;
   }
 }
 
