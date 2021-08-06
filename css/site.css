@@ -13,54 +13,61 @@ body {
 
 .main {
   text-align: center;
+  padding: 3.25rem 0px;
 }
 .main .header {
-  padding: 1.5rem;
+  padding: 1.75rem;
 }
 .main .header h1 {
   font-weight: lighter;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .main .header h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .main .header p {
-  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #a3a5ae;
 }
 .main .container {
   display: grid;
-  grid-template-columns: auto 310px auto;
+  grid-template-columns: 1fr;
   grid-template-rows: 4;
   column-gap: 2rem;
   row-gap: 2rem;
-  padding: 2rem;
+  margin-top: 3rem;
 }
 .main .container .supervisor {
   grid-row-start: 1;
   grid-row-end: 1;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  justify-self: center;
   border-top: #45d3d3 4px solid;
 }
 .main .container .team-builder {
   grid-row-start: 2;
   grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  justify-self: center;
   border-top: #ea5353 4px solid;
 }
 .main .container .karma {
   grid-row-start: 3;
   grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  justify-self: center;
   border-top: #fcaf4a 4px solid;
 }
 .main .container .calculator {
   grid-row-start: 4;
   grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  justify-self: center;
   border-top: #549ef2 4px solid;
 }
 .main .container .card {
@@ -121,13 +128,15 @@ body {
   }
   .main .header h1 {
     font-weight: lighter;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .main .header h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .main .header p {
-    font-size: 0.9rem;
+    margin: 1rem auto 0 auto;
+    width: 34.375rem;
+    font-size: 1rem;
   }
   .main .container {
     display: grid;
@@ -136,6 +145,13 @@ body {
     column-gap: 2rem;
     row-gap: 2rem;
     padding: 2rem;
+  }
+  .main .container .card {
+    width: 350px;
+    height: 250px;
+  }
+  .main .container .card-image {
+    top: 120px;
   }
   .main .container .supervisor {
     grid-row-start: 2;
@@ -170,7 +186,7 @@ body {
     border-top: #549ef2 4px solid;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .main .container {
     grid-template-columns: auto auto;
     grid-template-rows: 2;
