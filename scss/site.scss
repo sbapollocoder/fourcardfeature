@@ -5,6 +5,7 @@ $blue: hsl(212, 86%, 64%);
 $very-dark-blue: hsl(234, 12%, 34%);
 $grayish-blue: hsl(229, 6%, 66%);
 $very-light-gray: hsl(0, 0%, 98%);
+$white: #fff;
 
 * {
   margin: 0;
@@ -90,6 +91,7 @@ body {
       height: 225px;
       border-radius: 5px;
       box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+      background-color: $white;
 
       h3 {        
         color: $very-dark-blue;
